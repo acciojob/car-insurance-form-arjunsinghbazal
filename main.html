@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form action="aj.php">
+       <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+       </div><br>
+       <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" required>
+       </div>
+       <br>
+       <div id="gender" >
+        <label for="gender">Gender:-</label>
+        Male: <input type="radio"  name="mygender"> Female: <input type="radio" name="mygender">
+       </div>
+       <br>
+       <div>
+       <label for="cars">Car Brands</label>
+       <select name="my car" id="cars" required>
+        <option value="ind">Indica</option>
+        <option value="swf">Swift</option>
+       </select>
+       </div><br>
+       <div>
+        <label for="carage">Car Age</label>
+        <input type="number" id="carage" required>
+       </div><br>
+       <div>
+         <label for="dop">Date of Purchase</label>
+         <input type="date" id="dop" required>
+       </div><br>
+   <div>
+    <label for="password">Password</label>
+    <input type="text" id="password" required>
+   </div><br>
+   <button type="submit">Submit</button>
+    </form>
 </body>
-
 </html>
